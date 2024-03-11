@@ -11,7 +11,7 @@ from models.user import User
 from models.state import State
 from models.city import City
 from models.amenity import Amenity
-from models.palce import Place
+from models.place import Place
 from models.review import Review
 
 
@@ -257,5 +257,5 @@ class HBNBCommand(cmd.Cmd):
             valueDict[command](line.strip())
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     HBNBCommand().cmdloop()
