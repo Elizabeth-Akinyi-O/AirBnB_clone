@@ -11,14 +11,14 @@ import models
 import unittest
 from datetime import datetime
 from time import sleep
-from models.amnityenity import amnityenity
+from models.amenity import Amenity
 
 
 class TestAmenity_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Amenity class."""
 
     def test_no_args_instantiates(self):
-        self.assertEqual(amenity, type(Amenity()))
+        self.assertEqual(Amenity, type(Amenity()))
 
     def test_new_instance_stored_in_objects(self):
         self.assertIn(Amenity(), models.storage.all().values())
@@ -91,7 +91,7 @@ class TestAmenity_save(unittest.TestCase):
     @classmethod
     def setUp(self):
         try:
-            os.renamnitye("file.json", "tmp")
+            os.rename("file.json", "tmp")
         except IOError:
             pass
 
@@ -101,7 +101,7 @@ class TestAmenity_save(unittest.TestCase):
         except IOError:
             pass
         try:
-            os.renamnitye("tmp", "file.json")
+            os.rename("tmp", "file.json")
         except IOError:
             pass
 
@@ -170,7 +170,7 @@ class TestAmenity_to_dict(unittest.TestCase):
         amnity.created_at = amnity.updated_at = dt
         tdict = {
             'id': '123456',
-            '__class__': 'amnityenity',
+            '__class__': 'Amenity',
             'created_at': dt.isoformat(),
             'updated_at': dt.isoformat(),
         }
@@ -186,5 +186,5 @@ class TestAmenity_to_dict(unittest.TestCase):
             amnity.to_dict(None)
 
 
-if __namnitye__ == "__main__":
+if __name__ == "__main__":
     unittest.main()
