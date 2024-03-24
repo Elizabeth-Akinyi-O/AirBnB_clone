@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang ="EN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-places.css">
+    <title>AirBnB clone</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile_nav">
+        <label for="main_check" class="main_nav_burguer">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check">
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
+              </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>Arizona:</h2>
+              <ul>
+                <li>Page</li>
+                <li>Page2</li>
+              </ul>
+            </li>
+            <li><h2>California:</h2>
+              <ul>
+                <li>San Francisco</li>
+                <li>Los Altos</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Tv</li>
+            <li>Kitchen</li>
+            <li>Iron</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section>
+
+      <section class="places">
+        <h1>Places</h1>
+        <article>
+          <div class="article_places_header">
+            <h2>Enwoshipai</h2>
+            <div class="price_by_night">$100</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> Mercy Falcon</p>
+          </div>
+          <div class="description">
+            <p>Our spacious Superior Rooms offer luxury and comfort. Ideal for leisure and business travellers, our Superior Rooms feature large windows with panoramic views of the city, a plush, comfortable king bed, an executive working desk, a luxurious bathtub with a separate shower and a complimentary mini bar for your complete comfort and convenience during your stay with us.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Mark Misema January 22, 2023</h3>
+                <p>I had an amazing time...the food was epic. Will definitely be returning.</p>
+              </li>
+              <li>
+                <h3>From Pius Mukwora March 19, 2024</h3>
+                <p>This has become one of my favourite places. Higly recommend.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Luxe Suites</h2>
+          <div class="price_by_night">$95</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> Paddison Deol</p>
+          </div>
+          <div class="description">
+            <p> Our suites offer beautifully designed, well appointed, generously sized, fully serviced 1 and 2 bedroom apartments and hotels rooms with top-of-the-line furniture, fittings and finishing that easily meet international 5-Star standards. We strive to make your trip as easy as possible while allowing you to make the most out of your stay.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Review</h2>
+            <ul>
+              <li>
+                <h3>From Kimnana Seong, 15th August 2020</h3>
+                <p>Luxe suites made my work trip a delight. It felt like a vacation.</p>
+              </li>
+              <li>
+                <h3>From Connor Coldstone 4th April 2019</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Misai Hotel</h2>
+          <div class="price_by_night">$250</div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> Furaha Akinyi</p>
+          </div>
+          <div class="description">
+            <p>Misai rooms are a mix of a unique intimate chic design and a dose of elegance with walnut wooden walls, marble bathrooms flooded with natural light. The guest rooms feature a king bed, wardrobe, luggage rack, working desk and flat screen smart TVs with a view overlooking the city's commercial and entertainment hub.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Precious Scholarstica 14th August, 2024</h3>
+                <p>Best valentine I have ever had. Thank you Misai hotel.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>The Oak Valley</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Maxine Luhango</p>
+          </div>
+          <div class="description">
+            <p>Our rooms offer extra space for stretching out, with access to a garden overlooking a protected wetland. They feature a walk-in rain shower, luxury linens, King bed, 40-inch LED television, and a sofa.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Moses Newman 27th August 2018</h3>
+                <p>Maxine is an epic host. Nothing more i can say. 5 stars!</p>
+              </li>
+              <li>
+                <h3>From Maribel Mwafrika 2nd February 2020</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>My Tribe Penthouse Suites</h2>
+            <div class="price_by_night">$79</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> John Lennon</p>
+          </div>
+          <div class="description">
+            <p>Set on two levels, connected by a mahogany staircase, the Penthouse embodies the most characteristic design features of the hotel. Over-sized couches, a 55-inch LED Smart TV in the living room and a 40 inch LED Smart TV in the bedroom, guest bathroom, double-volume floor to ceiling windows, luggage storage and a walk-in closet are all iconic features of this suite.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Dj Babisky the 20th March 2024</h3>
+                <p>My Tribe is an epic place. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From North Paris 4th January 2021</h3>
+                <p>Best place ever!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>Donkey Kong Country</h2>
+            <div class="price_by_night">$150</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">8 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> John Lennon</p>
+          </div>
+          <div class="description">
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Bob Dylan the 27th August 2022</h3>
+                <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From Connor 4th August 2022</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        </section>
+    </div>
+    <footer><p>Best School</p></footer>
+  </body>
+</html>
