@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #FFF;
+    clear: left;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #484848;
+    text-align: center;
+}
